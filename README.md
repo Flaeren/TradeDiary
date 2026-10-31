@@ -1,10 +1,26 @@
-# TradeDiary
+<p align="center">
+  <img src="docs/img/logo.svg" alt="TradeDiary" width="320">
+</p>
 
-> A free, open source trading journal for tracking, analyzing, and improving your trading performance.
+<h3 align="center">A free, open source trading journal. Log the trade, keep the reasoning, learn from both.</h3>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![GitHub Issues](https://img.shields.io/github/issues/gabremoku/tradediary)](https://github.com/gabremoku/tradediary/issues)
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-6366f1.svg" alt="License: MIT"></a>
+  <img src="https://img.shields.io/badge/status-early%20(planning)-b45309.svg" alt="Status: early, planning">
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-0f766e.svg" alt="Contributions welcome"></a>
+  <a href="https://github.com/Flaeren/TradeDiary/issues"><img src="https://img.shields.io/github/issues/Flaeren/TradeDiary?color=1f2937" alt="GitHub issues"></a>
+</p>
+
+<p align="center">
+  <a href="#key-features">Features</a> ·
+  <a href="#tech-stack">Tech stack</a> ·
+  <a href="#getting-started">Getting started</a> ·
+  <a href="#roadmap">Roadmap</a> ·
+  <a href="CONTRIBUTING.md">Contributing</a> ·
+  <a href="#license">License</a>
+</p>
+
+> **Status:** early. This README describes where the project is going; the roadmap below shows what exists today (nothing is checked off yet).
 
 ---
 
@@ -28,7 +44,7 @@ TradeDiary is an open source trading journal application designed to help trader
 
 ## Tech Stack
 
-> _To be finalized as the project evolves. Suggestions welcome via [Discussions](https://github.com/gabremoku/tradediary/discussions)._
+> _To be finalized as the project evolves. Suggestions welcome via [Discussions](https://github.com/Flaeren/TradeDiary/discussions)._
 
 - **Frontend:** React / TypeScript
 - **Backend:** Node.js / Express (or equivalent REST/GraphQL API)
@@ -49,7 +65,7 @@ TradeDiary is an open source trading journal application designed to help trader
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/gabremoku/tradediary.git
+git clone https://github.com/Flaeren/TradeDiary.git
 cd tradediary
 
 # 2. Install dependencies
@@ -125,7 +141,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
 - [ ] Docker / self-hosted deployment guide
 - [ ] Plugin / extension system
 
-See the [open issues](https://github.com/gabremoku/tradediary/issues) for the full list.
+See the [open issues](https://github.com/Flaeren/TradeDiary/issues) for the full list.
 
 ---
 
@@ -137,6 +153,10 @@ Distributed under the [MIT License](LICENSE). Free to use, modify, and distribut
 
 ## Community
 
-- [Open an Issue](https://github.com/gabremoku/tradediary/issues/new/choose)
-- [Start a Discussion](https://github.com/gabremoku/tradediary/discussions)
-- [Submit a Pull Request](https://github.com/gabremoku/tradediary/pulls)
+- [Open an Issue](https://github.com/Flaeren/TradeDiary/issues/new/choose)
+- [Start a Discussion](https://github.com/Flaeren/TradeDiary/discussions)
+- [Submit a Pull Request](https://github.com/Flaeren/TradeDiary/pulls)
+
+---
+
+<p align="center"><sub>Made by Gabriele Denaro · <a href="https://github.com/Flaeren">GitHub: Flaeren</a> · <a href="https://gabrieledenaro.com">gabrieledenaro.com</a></sub></p>

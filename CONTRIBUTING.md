@@ -28,8 +28,8 @@ By participating in this project you agree to treat all contributors with respec
 
 | Type | Where to start |
 |------|---------------|
-| Bug fix | [Open an issue](https://github.com/gabremoku/tradediary/issues/new?template=bug_report.md) first, then submit a PR |
-| Feature request | [Open a feature request](https://github.com/gabremoku/tradediary/issues/new?template=feature_request.md) or [Discussion](https://github.com/gabremoku/tradediary/discussions) |
+| Bug fix | [Open an issue](https://github.com/Flaeren/TradeDiary/issues/new?template=bug_report.md) first, then submit a PR |
+| Feature request | [Open a feature request](https://github.com/Flaeren/TradeDiary/issues/new?template=feature_request.md) or [Discussion](https://github.com/Flaeren/TradeDiary/discussions) |
 | Documentation | Edit files in `docs/` or update `README.md` and open a PR |
 | Tests | Add or improve tests in `tests/` |
 | Translations | Open an issue to coordinate |
