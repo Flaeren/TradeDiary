@@ -1,161 +1,71 @@
 <p align="center">
-  <img src="docs/img/logo.svg" alt="TradeDiary" width="320">
+  <a href="https://journal.getpatrimony.com/en/">
+    <img src="docs/img/logo.svg" alt="Journal" width="280">
+  </a>
 </p>
 
-<h3 align="center">A free, open source trading journal. Log the trade, keep the reasoning, learn from both.</h3>
+<h3 align="center">The diary of your trades. Every number says where it comes from.</h3>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-6366f1.svg" alt="License: MIT"></a>
-  <img src="https://img.shields.io/badge/status-early%20(planning)-b45309.svg" alt="Status: early, planning">
-  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-0f766e.svg" alt="Contributions welcome"></a>
-  <a href="https://github.com/Flaeren/TradeDiary/issues"><img src="https://img.shields.io/github/issues/Flaeren/TradeDiary?color=1f2937" alt="GitHub issues"></a>
+  <img src="https://img.shields.io/badge/status-alpha-b45309.svg" alt="Status: alpha">
+  <img src="https://img.shields.io/badge/access-by%20invitation-6366f1.svg" alt="Access: by invitation">
+  <img src="https://img.shields.io/badge/data-EU%20(Frankfurt)-0f766e.svg" alt="Data stored in the EU, Frankfurt">
+  <img src="https://img.shields.io/badge/import-Trading%20212-1f2937.svg" alt="Import: Trading 212">
+  <img src="https://img.shields.io/badge/no-ads%20%C2%B7%20no%20AI%20%C2%B7%20no%20signals-0e7490.svg" alt="No ads, no AI, no signals">
 </p>
 
 <p align="center">
-  <a href="#key-features">Features</a> ·
-  <a href="#tech-stack">Tech stack</a> ·
-  <a href="#getting-started">Getting started</a> ·
-  <a href="#roadmap">Roadmap</a> ·
-  <a href="CONTRIBUTING.md">Contributing</a> ·
-  <a href="#license">License</a>
+  <a href="https://journal.getpatrimony.com/en/">Journal site</a> ·
+  <a href="#why-another-journal">Why</a> ·
+  <a href="#whats-in-today">What's in</a> ·
+  <a href="#get-in">Get in</a> ·
+  <a href="#about-this-repository">About this repo</a>
 </p>
 
-> **Status:** early. This README describes where the project is going; the roadmap below shows what exists today (nothing is checked off yet).
+<p align="center">
+  <a href="https://journal.getpatrimony.com/en/"><img src="docs/img/journal-preview.png" alt="Journal: the diary of your trades, with a candlestick chart of 72 sample trades. By invitation only." width="720"></a>
+</p>
 
----
+**Journal, powered by [Patrimony](https://getpatrimony.com)**, is a trading journal. You log each trade, import your broker's file, and see how you are really doing: your average result, how much you risk, where you lose. When a number is an estimate, it says so.
 
-## What is TradeDiary?
+> **Status:** alpha, by invitation only. The price is not decided, and neither is what will be free and what Premium. The trades and figures on the Journal's site are samples.
 
-TradeDiary is an open source trading journal application designed to help traders of all levels document their trades, analyze patterns in their decision-making, and continuously improve their strategy. Whether you trade stocks, forex, crypto, or futures, TradeDiary gives you a structured way to record entries, exits, and the reasoning behind every trade — then surfaces the data you need to grow.
+## Why another journal
 
----
+Most journals show a number and let you believe it. This one separates three cases and shows them differently:
 
-## Key Features
+| | What it means |
+|---|---|
+| **Measured** | A true R. The risk is the one you set at entry and does not change if you move the stop later. |
+| **Estimated** | If you did not save a stop, 1R becomes your average loss. It is a calculation you can redo by hand, not a true R, and it says so. |
+| **Careful** | Few trades. Under 30, statistics swing around, and the journal tells you. |
 
-- **Trade Logging** — Record entries, exits, position size, instrument, and personal notes for every trade.
-- **Performance Analytics** — Visualize win rate, profit factor, average R:R, drawdown, and equity curves over time.
-- **Tag & Strategy Tracking** — Label trades by strategy, session, or market condition and filter analytics by tag.
-- **Risk Management Tools** — Track risk per trade, daily loss limits, and portfolio exposure at a glance.
-- **Trade Review Workflow** — Attach screenshots and post-trade notes to build a structured review habit.
-- **Import / Export** — Import trades from broker CSV exports; export your journal data at any time.
-- **No Lock-in** — Your data stays yours. SQLite by default; configurable for other databases.
+No artificial intelligence: the statistics are calculations you can redo. No signals and no advice: the journal records and analyses your trades, it does not tell you what to buy.
 
----
+## What's in today
 
-## Tech Stack
+Everything below is in the alpha. Nothing here is a promise.
 
-> _To be finalized as the project evolves. Suggestions welcome via [Discussions](https://github.com/Flaeren/TradeDiary/discussions)._
+| Area | What you get |
+|---|---|
+| **Logging** | Quick entry with a preview of gross, net and R. Six fields are enough: instrument, direction, entry price, stop, quantity, strategy. Partial exits on the same trade. |
+| **Review** | A trade list grouped by day, a results calendar, and an overview with net result, equity curve, win rate, expectancy, profit factor, payoff, average R and drawdown. |
+| **Charts** | Result per trade, duration, symbol, outcomes. |
+| **Statistics** | By strategy, symbol, weekday, long/short and plan followed. A strategy filter across the whole overview. |
+| **Rules** | Your own yes/no rules, checked on every trade, with how you do when you keep them and when you don't. |
+| **Import** | Trading 212 export (CSV), read in your browser and never sent to a server. Each sale becomes a closed trade, matched to its purchases first in, first out; an old purchase gets an estimated entry that says so. It also updates trades you still hold. |
+| **Privacy** | A privacy mode to hide the figures. Data stored in the EU (Frankfurt). No advertising. |
+| **Languages** | Italian and English. |
 
-- **Frontend:** React / TypeScript
-- **Backend:** Node.js / Express (or equivalent REST/GraphQL API)
-- **Database:** SQLite (default), PostgreSQL (optional)
-- **Testing:** Vitest / Jest, Playwright
+**Not yet:** a link to a Patrimony account to see trade results next to your net worth; a guided review and a screenshot for each trade; import from other brokers (only after testing on real files).
 
----
+## Get in
 
-## Getting Started
+For now entry is **by invitation only**. Ask for access on the [Journal site](https://journal.getpatrimony.com/en/) or write to [contact@getpatrimony.com](mailto:contact@getpatrimony.com) and you will get a reply.
 
-### Prerequisites
+## About this repository
 
-- [Node.js](https://nodejs.org/) >= 18
-- [npm](https://www.npmjs.com/) >= 9 (or equivalent package manager)
-- Git
-
-### Installation
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/Flaeren/TradeDiary.git
-cd tradediary
-
-# 2. Install dependencies
-npm install
-
-# 3. Copy environment config and adjust as needed
-cp config/.env.example .env
-
-# 4. Run database migrations
-npm run db:migrate
-
-# 5. Start the development server
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Running Tests
-
-```bash
-# Unit and integration tests
-npm test
-
-# End-to-end tests
-npm run test:e2e
-```
-
----
-
-## Project Structure
-
-```
-tradediary/
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Application pages / views
-│   ├── services/       # API clients and business logic
-│   ├── hooks/          # Custom React hooks
-│   ├── types/          # TypeScript type definitions
-│   └── utils/          # Shared utility functions
-├── tests/
-│   ├── unit/           # Unit tests
-│   ├── integration/    # Integration tests
-│   └── e2e/            # End-to-end tests
-├── docs/               # Additional documentation
-├── config/             # Configuration templates
-└── .github/            # CI workflows, issue & PR templates
-```
-
----
-
-## Contributing
-
-We welcome contributions of all kinds — bug reports, feature requests, documentation improvements, and code.
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
-
-**Quick steps:**
-1. Fork this repository
-2. Create a feature branch: `git checkout -b feature/your-feature-name`
-3. Commit your changes with clear messages
-4. Open a pull request against `main`
-
----
-
-## Roadmap
-
-- [ ] Core trade logging UI
-- [ ] Analytics dashboard
-- [ ] Broker CSV import (Interactive Brokers, TD Ameritrade, Binance)
-- [ ] Mobile-responsive layout
-- [ ] REST API with OpenAPI spec
-- [ ] Docker / self-hosted deployment guide
-- [ ] Plugin / extension system
-
-See the [open issues](https://github.com/Flaeren/TradeDiary/issues) for the full list.
-
----
-
-## License
-
-Distributed under the [MIT License](LICENSE). Free to use, modify, and distribute.
-
----
-
-## Community
-
-- [Open an Issue](https://github.com/Flaeren/TradeDiary/issues/new/choose)
-- [Start a Discussion](https://github.com/Flaeren/TradeDiary/discussions)
-- [Submit a Pull Request](https://github.com/Flaeren/TradeDiary/pulls)
+This repository is only the Journal's shop window: **there is no code here**, and the Journal is not open source. It used to hold the skeleton of an open-source project also called TradeDiary; that plan was dropped in favour of the Journal, so the skeleton was removed.
 
 ---
 
