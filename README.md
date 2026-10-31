@@ -17,6 +17,7 @@
 <p align="center">
   <a href="https://journal.getpatrimony.com/en/">Journal site</a> ·
   <a href="#why-another-journal">Why</a> ·
+  <a href="#how-it-works">How it works</a> ·
   <a href="#whats-in-today">What's in</a> ·
   <a href="#get-in">Get in</a> ·
   <a href="#about-this-repository">About this repo</a>
@@ -42,6 +43,27 @@ Most journals show a number and let you believe it. This one separates three cas
 
 No artificial intelligence: the statistics are calculations you can redo. No signals and no advice: the journal records and analyses your trades, it does not tell you what to buy.
 
+## How it works
+
+From a single trade to the review, in three steps. Every picture below is the Journal's own page, with sample data.
+
+<p align="center">
+  <img src="docs/img/step-log.png" alt="Step 1, log the trade: instrument, direction, entry, stop, quantity and strategy, with a preview of the risk (1R) and of gross, net and R if it closes at a given price" width="760">
+</p>
+
+**1. Log.** Six fields are enough. The risk stays what you set at entry: move the stop later and the R of that trade does not change.
+
+<p align="center">
+  <img src="docs/img/step-import.png" alt="Step 2, import your broker's file: a Trading 212 export read in the browser, sales matched first in first out, one entry marked as estimated and one trade still open" width="760">
+</p>
+
+**2. Import.** The Trading 212 export is read in your browser and never sent to a server. Each sale becomes a closed trade matched to its purchases, first in, first out. If the purchase is older than the file, the entry is estimated and says so.
+
+<p align="center">
+  <img src="docs/img/step-review.png" alt="Step 3, review: a results calendar, your own yes/no rules counted over 24 trades, and a warning that 24 trades is under 30" width="760">
+</p>
+
+**3. Review.** The result day by day, the equity curve, and statistics by strategy, symbol and weekday. You write your own rules and see in how many trades you kept them. Under 30 trades, the journal warns you the sample is too small.
 ## What's in today
 
 Everything below is in the alpha. Nothing here is a promise.
@@ -65,7 +87,7 @@ For now entry is **by invitation only**. Ask for access on the [Journal site](ht
 
 ## About this repository
 
-This repository is only the Journal's shop window: **there is no code here**, and the Journal is not open source. It used to hold the skeleton of an open-source project also called TradeDiary; that plan was dropped in favour of the Journal, so the skeleton was removed.
+This repository is only the Journal's shop window: **there is no code here**, and the Journal is not open source. It used to be an open-source trading journal also called TradeDiary; that plan was dropped in favour of the Journal. The old code is not lost: it is kept untouched on the [`archive/open-source-app`](https://github.com/Flaeren/TradeDiary/tree/archive/open-source-app) branch.
 
 ---
 
